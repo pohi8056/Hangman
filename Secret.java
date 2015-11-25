@@ -67,7 +67,7 @@ public class Secret{
 		secret_word = temp_word;
 	    }
 	}
-	System.out.println("SECRET:" + secret_word);
+	//	System.out.println("SECRET:" + secret_word);
 	return secret_word;
     }
 
