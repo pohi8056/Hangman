@@ -1,11 +1,13 @@
 import java.util.*;
+import java.io.Serializable;
 
+public class Math implements Serializable{
+    protected static final long serialVersionUID = 411234324200L;
 
-public class Math{
     int rdm1;
     int rdm2;
     int operation;
-    int[] question = {rdm1, rdm2, operation};
+    String question = (""+ rdm1 + " " + operation + " " + rdm2 + "= ?");
     int answer;
     String opString;
     Boolean correct = false;
@@ -17,9 +19,7 @@ public class Math{
 	operation = rand1.nextInt((4-1) + 1) + 1;
 
     }
-
-
-    public int generateMath(){
+    public void generateMath(){
 	correct = false;
 	generateNumbers();
 	switch(operation){
@@ -40,11 +40,10 @@ public class Math{
 	    opString = "*";
 	    break;
 	}
-	return answer;
     }
     
     
-    public int[] getQuestion(){
+    public String getQuestion(){
 	return question;
     }
 
