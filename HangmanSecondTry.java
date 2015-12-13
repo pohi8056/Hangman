@@ -192,8 +192,8 @@ public class HangmanSecondTry {
    
     public void wordHandler(String input) {
 
-	
-  	
+	input = input.toUpperCase();
+
 	for (int i=0; i<arrayOfTheWord.length; i++) {
 	    if(input.charAt(0) == arrayOfTheWord[i]) {
 		guessedChar[i] = input.charAt(0);
