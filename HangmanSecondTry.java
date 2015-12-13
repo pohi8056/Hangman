@@ -218,6 +218,7 @@ public class HangmanSecondTry {
 	    System.out.println("You have run out of guesses.");
 	    System.out.println("The secret word was " + theWord);
 	    System.out.println("");
+	    return;
 	} else {
 	    System.out.println("You still have " + numberOfGuesses + " possible wrong guesses left, so keep trying.");
 	}
@@ -225,7 +226,8 @@ public class HangmanSecondTry {
 	if (charsLeftToGuess == 0) {
 	    System.out.println("You managed to guess the secret word, congratulations!");
 	    System.out.println("The secret word was : " + theWord);   
-	    System.out.println("");          
+	    System.out.println("");
+	    return;
 	} else {
 	    System.out.println("You have " + charsLeftToGuess  + " letter left to guess.");
 	    System.out.println("");
